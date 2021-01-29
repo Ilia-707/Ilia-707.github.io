@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta  charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class='menu'>
+		<ul>
+			<li id="start">Новая игра</li>
+			<li>количество карт
+                  <select id="val">
+				      <option value='8'>8</option>
+                      <option value='56'>56</option>
+                      <option value='64'>64</option>
+                      <option value='72'>72</option>
+                      <option value='84'>84</option>
+                  </select>
+            </li>
+			<li>
+			  <div class='rools'>Правила</div>
+			  <div id='rools-text' class='hide'>
+			    Игроки ходят по очереди, выкладывая одну карту на стол.<br>
+				Чья карта на столе будет большей, тот забирает куш.<br>
+				Выигрывает тот, кто соберет больше карт.
+			  </div>
+			</li>
+		</ul>
+	</div>
+	<div id='container' class='container'>	
+	    <div id='listResult'>
+			<h2 id='win'></h2>
+			<table id='tableResult'>
+				<tr>
+					<th></th><th>Игрок</th><th>Очки</th>
+				</tr>
+				<tr>
+					<td>1</td><td></td><td></td>
+				</tr>
+				<tr>
+					<td>2</td><td></td><td></td>
+				</tr>
+				<tr>
+					<td>3</td><td></td><td></td>
+				</tr>
+				<tr>
+					<td>4</td><td></td><td></td>
+				</tr>
+			</table>
+			<button id='newGame' class='newGame'>Начать новую игру</button>
+			<button id='close' class='close'>X</button>
+	    </div>
+	</div>
+	<script src='game.js'></script>
+</body>
+</html>                           
