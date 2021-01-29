@@ -1,10 +1,11 @@
 * {
 	margin: 0;
+	padding: 0;
 }
 body {
 	position: relative;
 	width: 100vw;
-	height: 95vh;
+	height: 96vh;
 }
 .meny {
 	width: 100%;
@@ -12,31 +13,44 @@ body {
 	padding: .1em .3em;
 }
 .menu ul {
-	background-color: #adb5e4;
-	padding: .2em .4em;
-	margin: 0;
+	background-color: #adb5e4;	
 }
 .menu ul li {
 	display: inline-block;
-	position: relative;
-	border-radius: .2em;
-	padding: .2em .4em;
-	background-color: #f7d4d4;
+	position: relative;	
+	padding: .2em .6em;	
 	text-transform: uppercase;
 	font-size: 1.2 em;
 	cursor: pointer;
 }
-.hide {
-	position: fixed;
-	visibility: hidden;
-	z-index: 1000;
-	background-color: white;
-	padding: .5em .6em;
-	border: 1px solid black;
-	border-radius: 1em;
+.menu ul li:hover {
+	background-color: #cfd3ea;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}	
+.menu ul li:active {
+	background-color: #7c88d0;
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+}	
+#rool div {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: 102%;
+	left: -.15em;
+	width: 250px;
+	padding: .4em .6em;
 	text-transform: none;
+	background-color: white;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	border: 1px solid black;
+	border-radius: 0 .5em .5em .5em;	
 }
-
+#rool p {
+	text-indent: 20px;	
+}
+#rool p+p {
+	margin-top: 0.5em;
+}
 .container {
 	position: relative;
 	background-color: green;
@@ -67,6 +81,9 @@ body {
 	-moz-backface-visibility: hidden;		
 	     backface-visibility: hidden;
 }
+.face:hover {
+	background-color: #70ffff;	
+}
 .face p { 
     margin: 0;
 	display: block;
@@ -96,6 +113,7 @@ body {
 	     backface-visibility: hidden;
 }
 #listResult {
+	top: 0;	
 	background-color: #c8f791;
 	position: absolute;
 	visibility: hidden;	
